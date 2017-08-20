@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 2rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  background-color: #979797;
+}
+
+#main_container {
+
+}
+
+.main_logo {
+  background-color: rgb(10, 33, 66);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo {
+    background: url("/images/logo.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+    width: 70vw;
+    height: 40vh;
+  }
+}
+
+.white_side {
+  background-color: white;
+  width: 50vw;
+  height: auto;
+}
+
+.blue_side {
+  background-color: rgb(10, 33, 66);
+  width: 50vw;
+  height: auto;
+}
+
+.about_company {
+  min-height: 100vh;
+  display: flex;
+}
+
+.lease {
+  min-height: 100vh;
+  display: flex;
+}
+
+.documents_list {
+  min-height: 100vh;
+  display: flex;
+}
+
+.contact {
+  min-height: 100vh;
+  display: flex;
+}
