@@ -1,12 +1,10 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 html {
-  font-size: 10px;
-}
+  font-size: 10px; }
 
 body {
   font-size: 2rem;
@@ -14,56 +12,44 @@ body {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  background-color: #979797;
-}
+  background-color: #979797; }
 
 .main_logo {
   background-color: #0a2142;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.main_logo .logo {
-  background: url("/images/logo.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-color: white;
-  width: 70vw;
-  height: 40vh;
-}
+  align-items: center; }
+  .main_logo .logo {
+    background: url("/images/logo.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+    width: 70vw;
+    height: 40vh; }
 
 .white_side {
   background-color: white;
   width: 50vw;
-  height: auto;
-}
+  height: auto; }
 
 .blue_side {
   background-color: #0a2142;
   width: 50vw;
-  height: auto;
-}
+  height: auto; }
 
 .about_company {
   min-height: 100vh;
-  display: flex;
-}
+  display: flex; }
 
 .lease {
   min-height: 100vh;
-  display: flex;
-}
+  display: flex; }
 
 .documents_list {
   min-height: 100vh;
-  display: flex;
-}
+  display: flex; }
 
 .contact {
   min-height: 100vh;
-  display: flex;
-}
-
-/*# sourceMappingURL=maps/main.css.map */
+  display: flex; }
