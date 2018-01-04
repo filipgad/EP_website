@@ -3,53 +3,37 @@
   margin: 0;
   padding: 0; }
 
-html {
-  font-size: 10px; }
-
 body {
-  font-size: 2rem;
-  font-family: 'Roboto', Arial, sans-serif;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  background-color: #979797; }
+  font-family: 'Roboto', Arial, sans-serif; }
 
-.main_logo {
-  background-color: #0a2142;
-  min-height: 100vh;
+header {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .main_logo .logo {
-    background: url("/images/logo.png") no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-color: white;
-    width: 70vw;
-    height: 40vh; }
-
-.white_side {
-  background-color: white;
-  width: 50vw;
-  height: auto; }
-
-.blue_side {
-  background-color: #0a2142;
-  width: 50vw;
-  height: auto; }
-
-.about_company {
-  min-height: 100vh;
-  display: flex; }
-
-.lease {
-  min-height: 100vh;
-  display: flex; }
-
-.documents_list {
-  min-height: 100vh;
-  display: flex; }
-
-.contact {
-  min-height: 100vh;
-  display: flex; }
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-color: #D5D8F1; }
+  header .logo {
+    width: 70%;
+    height: 25%;
+    background-color: #D4A87D; }
+  header .main_nav {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 8%;
+    background-color: #215163; }
+    header .main_nav ul {
+      width: 100%;
+      border: 1px solid yellow;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      header .main_nav ul li {
+        list-style-type: none; }
+        header .main_nav ul li a {
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 130%;
+          text-decoration: none; }
