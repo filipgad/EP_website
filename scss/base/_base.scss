@@ -6,14 +6,15 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  color: #000;
-
+  color: #fff;
+  font-weight: lighter;
 }
 
 h1 {
   text-transform: uppercase;
   padding: 0 30px;
   letter-spacing: 1.5px;
+  font-weight: normal;
 }
 
 p {
@@ -23,7 +24,7 @@ p {
 }
 
 #main_container {
-  background-color: #A0CACF;
+  background-color: #446A8D;
 }
 
 header {
@@ -108,6 +109,15 @@ section:nth-of-type(2n+0) {
   background-color: #fff;
   color: #000;
 }
+
+#contact {
+  span {
+    font-weight: bold;
+    letter-spacing: normal;
+  }
+}
+
+
 
 
 
