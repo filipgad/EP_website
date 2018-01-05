@@ -23,13 +23,14 @@ header {
   background: url(../images/logo.png) center center/100% no-repeat;
 }
 
-.hamburger {
-  width: 35px;
-  height: 30px;
-  border: 0;
+#hamburger {
+  width: 30px;
+  height: 20px;
+  border: none;
   border-top: 4px solid #0a2142;
-  background: transparent;
+  background: none;
   position: relative;
+  outline: none;
   transition: 0.3s transform linear;
   &::before, &::after {
     content: '';
@@ -38,32 +39,43 @@ header {
     left: 0;
     width: 100%;
     border-top: 4px solid #0a2142;
-    transform: translateY(9px);
+    transform: translateY(4px);
   }
   &::after {
-    transform: translateY(22px);
+    transform: translateY(12px);
     transition: 0.3s transform linear;
   }
-  &:focus {
+  &.open {
     transform: rotate(45deg) translateY(4px);
     border: none;
+    outline: none;
   }
-  &:focus::after {
-    transform: rotate(-90deg) translateX(-8px);
+  &.open::after {
+    transform: rotate(-90deg) translateX(-4px);
   }
 }
 
-.main_nav {
-  background-color: #D5D8F1;
+#main_nav {
+  background-color: #0a2142;
   ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     li {
-      border: 1px solid green;
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #fff;
       list-style-type: none;
       a {
-        color: white;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+          color: #C4C4C4;
+        }
       }
     }
   }
