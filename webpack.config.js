@@ -37,8 +37,7 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [
                     {
-                        loader: 'file-loader',
-                        options: {}
+                        loader: 'url-loader'
                     }
                 ]
             }
