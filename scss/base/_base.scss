@@ -6,6 +6,24 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
+  color: #000;
+
+}
+
+h1 {
+  text-transform: uppercase;
+  padding: 0 30px;
+  letter-spacing: 1.5px;
+}
+
+p {
+  padding: 20px 50px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+
+#main_container {
+  background-color: #A0CACF;
 }
 
 header {
@@ -14,6 +32,7 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100vw;
+  background-color: #fff;
 }
 
 .logo {
@@ -80,6 +99,17 @@ header {
     }
   }
 }
+
+section {
+  padding: 50px 0;
+}
+
+section:nth-of-type(2n+0) {
+  background-color: #fff;
+  color: #000;
+}
+
+
 
 // header {
 //   display: flex;
