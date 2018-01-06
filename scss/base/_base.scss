@@ -41,6 +41,9 @@ header {
   height: 15vh;
   background-color: #fff;
   background: url(../images/logo.png) center center/100% no-repeat;
+  @media #{$desktop} {
+    background-size: contain;
+  }
 }
 
 #hamburger {
@@ -73,6 +76,9 @@ header {
   &.open::after {
     transform: rotate(-90deg) translateX(-4px);
   }
+  @media #{$tablet}, #{$desktop} {
+    display: none;
+  }
 }
 
 #main_nav {
@@ -99,10 +105,27 @@ header {
       }
     }
   }
+  @media #{$tablet}, #{$desktop} {
+    display: show;
+    ul {
+      flex-direction: row;
+      li {
+        border: none;
+        border-right: 2px solid #fff;
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+
 }
 
 section {
   padding: 50px 0;
+  @media #{$tablet} {
+    padding: 50px 100px;
+  }
 }
 
 section:nth-of-type(2n+0) {
@@ -114,6 +137,36 @@ section:nth-of-type(2n+0) {
   span {
     font-weight: bold;
     letter-spacing: normal;
+  }
+}
+
+@media #{$tablet} {
+  #lease {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 20px;
+    .lease_info {
+      width: 50%;
+      h1 {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+@media #{$desktop} {
+  #lease {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 20px;
+    .lease_info {
+      width: 50%;
+      h1 {
+        padding: 0 20px;
+      }
+    }
   }
 }
 
