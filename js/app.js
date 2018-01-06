@@ -4,16 +4,16 @@ $(document).ready(function() {
   var menu = $("#main_nav");
   var manuLink = $("#main_nav a");
 
-
-  menu.hide();
-
-  hamburgerBtn.click(function () {
-    menu.slideToggle('slow');
-    $(this).toggleClass('open');
-  });
-
-  manuLink.click(function () {
+  if (window.matchMedia('(max-width: 767px)').matches) {
     menu.hide();
-    hamburgerBtn.toggleClass('open');
-  });
+    hamburgerBtn.click(function () {
+      menu.slideToggle('slow');
+      $(this).toggleClass('open');
+    });
+
+    manuLink.click(function () {
+      menu.hide();
+      hamburgerBtn.toggleClass('open');
+    });
+  }
 });
