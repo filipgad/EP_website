@@ -29,18 +29,28 @@ p {
 
 header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
-  background-color: #fff;
+  height: 100vh;
+  max-width: 100%;
+  background: url(../images/header_bg.jpg) center center/cover no-repeat;
+}
+
+#nav_bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  background-color: rgba(250,250,250,0.5);
 }
 
 .logo {
-  width: 80vw;
-  height: 15vh;
-  background-color: #fff;
-  background: url(../images/logo.png) center center/100% no-repeat;
+  width: 80%;
+  height: 80%;
+  background: url(../images/logo.png) center center/contain no-repeat;
   @media #{$desktop} {
     background-size: contain;
   }
@@ -82,43 +92,62 @@ header {
 }
 
 #main_nav {
-  background-color: #0a2142;
+  background-color: rgba(250,250,250,0.5);
+  width: 100%;
+  position: absolute;
+  top: 15%;
   ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    li {
-      width: 100%;
-      padding: 15px 0;
-      text-align: center;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      border-bottom: 2px solid #fff;
-      list-style-type: none;
-      a {
-        display: block;
-        text-decoration: none;
-        color: #fff;
-        &:hover {
-          color: #C4C4C4;
-        }
-      }
+  }
+  li {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #C4C4C4;
+    list-style-type: none;
+    &:first-child {
+      border-top: 2px solid #C4C4C4;
+    }
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: #0a2142;
+    font-weight: bold;
+    &:hover {
+      color: #C4C4C4;
     }
   }
   @media #{$tablet}, #{$desktop} {
     display: show;
     ul {
       flex-direction: row;
-      li {
+    }
+    li {
+      border: none;
+      &:first-child {
         border: none;
-        border-right: 2px solid #fff;
-        &:last-child {
-          border-right: none;
-        }
       }
     }
   }
+}
 
+.main_text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  width: 100%;
+  height: 85%;
+  color: #0a2142;
+  font-size: 1.5rem;
+  @media #{$tablet}, #{$desktop} {
+    font-size: 3rem;
+  }
 }
 
 section {
