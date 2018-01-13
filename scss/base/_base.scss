@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  color: #fff;
+  color: #000;
   font-weight: lighter;
 }
 
@@ -119,7 +119,7 @@ header {
     color: #0a2142;
     font-weight: bold;
     &:hover {
-      color: #C4C4C4;
+      color: #693B35;
     }
   }
   @media #{$tablet}, #{$desktop} {
@@ -152,15 +152,19 @@ header {
 
 section {
   padding: 50px 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 47%, rgba(220,219,220,1) 76%, rgba(199,197,199,1) 100%);
   @media #{$tablet} {
-    padding: 50px 100px;
+    padding: 100px 100px;
+  }
+  @media #{$desktop} {
+    padding: 150px 100px;
   }
 }
 
-section:nth-of-type(2n+0) {
-  background-color: #fff;
-  color: #000;
-}
+// section:nth-of-type(2n+0) {
+//   background-color: #fff;
+//   color: #000;
+// }
 
 #contact {
   span {
@@ -174,7 +178,7 @@ section:nth-of-type(2n+0) {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
     .lease_info {
       width: 50%;
       h1 {
@@ -189,7 +193,7 @@ section:nth-of-type(2n+0) {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 150px 20px;
     .lease_info {
       width: 50%;
       h1 {
