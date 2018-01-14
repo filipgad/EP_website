@@ -51,9 +51,6 @@ header {
   width: 80%;
   height: 80%;
   background: url(../images/logo.png) center center/contain no-repeat;
-  @media #{$desktop} {
-    background-size: contain;
-  }
 }
 
 #hamburger {
@@ -100,6 +97,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media #{$desktop} {
+      width: 1000px;
+      margin: 0 auto;
+    }
   }
   li {
     width: 100%;
@@ -150,7 +151,7 @@ header {
   }
 }
 
-section {
+.section_container {
   padding: 50px 0;
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 47%, rgba(220,219,220,1) 76%, rgba(199,197,199,1) 100%);
   @media #{$tablet} {
@@ -166,10 +167,34 @@ section {
 //   color: #000;
 // }
 
-#contact {
+#contact.section_container {
+  background: #0a2142;
+  color: #fff;
   span {
-    font-weight: bold;
+    font-size: 1.1rem;
     letter-spacing: normal;
+  }
+  @media #{$tablet}, #{$desktop} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 70px 0;
+  }
+}
+
+.contact_map {
+  margin-top: 20px;
+  height: 350px;
+  text-align: center;
+  @media #{$tablet}, #{$desktop} {
+    width: 50%;
+  }
+  iframe {
+    height: 100%;
+    width: 80%;
+    @media #{$desktop} {
+      width: 100%;
+    }
   }
 }
 
@@ -202,45 +227,3 @@ section {
     }
   }
 }
-
-
-
-
-
-// header {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   width: 100vw;
-//   height: 100vh;
-//   max-width: 100%;
-//   background-color: #D5D8F1;
-//   .logo {
-//     width: 70%;
-//     height: 25%;
-//     background-color: #D4A87D;
-//   }
-//   .main_nav {
-//     display: flex;
-//     align-items: center;
-//     width: 70%;
-//     height: 8%;
-//     background-color: #215163;
-//     ul {
-//       width: 100%;
-//       border: 1px solid yellow;
-//       display: flex;
-//       flex-direction: row;
-//       justify-content: space-around;
-//       li {
-//         list-style-type: none;
-//         a {
-//           color: #fff;
-//           text-transform: uppercase;
-//           font-size: 130%;
-//           text-decoration: none;
-//         }
-//       }
-//     }
-//   }
-// }
