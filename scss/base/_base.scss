@@ -17,6 +17,13 @@ h1 {
   font-weight: normal;
 }
 
+h2 {
+  text-transform: uppercase;
+  padding: 0 30px;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+}
+
 p {
   padding: 20px 50px;
   letter-spacing: 1.5px;
@@ -35,7 +42,7 @@ header {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  background: url(../images/header_bg.jpg) center center/cover no-repeat; 
+  background: url(../images/header_bg.jpg) center center/cover no-repeat;
 }
 
 #nav_bar {
@@ -157,25 +164,32 @@ header {
   }
 }
 
-.section_container {
+section {
   padding: 50px 0;
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 47%, rgba(220,219,220,1) 76%, rgba(199,197,199,1) 100%);
-  @media #{$tablet} {
-    padding: 100px 100px;
-  }
-  @media #{$desktop} {
+  @media #{$tablet}, #{$desktop} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     padding: 150px 100px;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+    }
   }
+  // @media #{$tablet} {
+  //   padding: 100px 100px;
+  // }
+  // @media #{$desktop} {
+  //   padding: 150px 100px;
+  // }
 }
 
-// section:nth-of-type(2n+0) {
-//   background-color: #fff;
-//   color: #000;
-// }
-
-#contact.section_container {
+#contact {
   background: #0a2142;
-  color: #fff;
+  color: #D3D4D4;
   span {
     font-size: 1.1rem;
     letter-spacing: normal;
@@ -204,32 +218,32 @@ header {
   }
 }
 
-@media #{$tablet} {
-  #lease {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 100px 20px;
-    .lease_info {
-      width: 50%;
-      h1 {
-        padding: 0 20px;
-      }
-    }
-  }
-}
-
-@media #{$desktop} {
-  #lease {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 150px 20px;
-    .lease_info {
-      width: 50%;
-      h1 {
-        padding: 0 20px;
-      }
-    }
-  }
-}
+// @media #{$tablet} {
+//   #lease {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     padding: 100px 20px;
+//     .lease_info {
+//       width: 50%;
+//       h1 {
+//         padding: 0 20px;
+//       }
+//     }
+//   }
+// }
+//
+// @media #{$desktop} {
+//   #lease {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     padding: 150px 20px;
+//     .lease_info {
+//       width: 50%;
+//       h1 {
+//         padding: 0 20px;
+//       }
+//     }
+//   }
+// }
