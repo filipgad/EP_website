@@ -5,19 +5,27 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  color: #000;
-  font-weight: lighter; }
+  color: #000; }
 
 h1 {
   text-transform: uppercase;
   padding: 0 30px;
   letter-spacing: 1.5px;
-  font-weight: normal; }
+  font-weight: 400; }
+
+h2 {
+  text-transform: uppercase;
+  padding: 20px 50px 0 50px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 1.2rem; }
 
 p {
   padding: 20px 50px;
   letter-spacing: 1.5px;
-  line-height: 30px; }
+  line-height: 30px;
+  font-weight: 300;
+  text-align: justify; }
 
 #main_container {
   background-color: #446A8D; }
@@ -132,24 +140,57 @@ header {
       .main_text h1 {
         margin-left: 5%; } }
 
-.section_container {
+section {
   padding: 50px 0;
   background: linear-gradient(to bottom, white 0%, whitesmoke 47%, #dcdbdc 76%, #c7c5c7 100%); }
+  @media (min-width: 768px) and (max-width: 1023px), (min-width: 1024px) {
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; } }
   @media (min-width: 768px) and (max-width: 1023px) {
-    .section_container {
-      padding: 100px 100px; } }
+    section {
+      padding: 100px 40px; } }
   @media (min-width: 1024px) {
-    .section_container {
-      padding: 150px 100px; } }
+    section {
+      padding: 150px 0; }
+      section h1 {
+        font-size: 3rem;
+        margin-right: 10%;
+        border: 1px solid red; }
+      section p {
+        border: 1px solid blue; } }
 
-#contact.section_container {
+#documents li {
+  list-style-type: none;
+  padding: 8px 50px; }
+  #documents li:first-child {
+    margin-top: 20px; }
+
+#documents a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer; }
+  #documents a:hover {
+    text-decoration: underline;
+    color: #693B35; }
+
+#contact {
   background: #0a2142;
-  color: #fff; }
-  #contact.section_container span {
+  color: #D3D4D4; }
+  #contact span {
     font-size: 1.1rem;
     letter-spacing: normal; }
+    @media (min-width: 1024px) {
+      #contact span {
+        letter-spacing: 1.5px; } }
+  #contact a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer; }
   @media (min-width: 768px) and (max-width: 1023px), (min-width: 1024px) {
-    #contact.section_container {
+    #contact {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -168,25 +209,3 @@ header {
     @media (min-width: 1024px) {
       .contact_map iframe {
         width: 100%; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #lease {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 100px 20px; }
-    #lease .lease_info {
-      width: 50%; }
-      #lease .lease_info h1 {
-        padding: 0 20px; } }
-
-@media (min-width: 1024px) {
-  #lease {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 150px 20px; }
-    #lease .lease_info {
-      width: 50%; }
-      #lease .lease_info h1 {
-        padding: 0 20px; } }
