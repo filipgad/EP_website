@@ -185,6 +185,12 @@ section {
   // @media #{$desktop} {
   //   padding: 150px 100px;
   // }
+  @media #{$tablet} {
+    padding: 100px 100px;
+  }
+  @media #{$desktop} {
+    padding: 150px 100px;
+  }
 }
 
 #contact {
