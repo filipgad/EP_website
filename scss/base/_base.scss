@@ -35,7 +35,7 @@ header {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  background: url(../images/header_bg.jpg) center center/cover no-repeat;
+  background: url(../images/katowice-ep-centrum.jpg) center center/cover no-repeat;
 }
 
 #nav_bar {
@@ -164,6 +164,11 @@ section {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    .documents_info {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+    }
   }
   @media #{$tablet} {
     padding: 100px 40px;
@@ -172,10 +177,6 @@ section {
     padding: 150px 100px;
     h1 {
       font-size: 3rem;
-      border: 1px solid red;
-    }
-    p {
-      border: 1px solid blue;
     }
   }
 }
@@ -196,6 +197,9 @@ section {
       text-decoration: underline;
       color: #693B35;
     }
+  }
+  span {
+    margin-right: 5px;
   }
 }
 
