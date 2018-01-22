@@ -151,6 +151,12 @@ section {
       section h1 {
         font-size: 3rem; } }
 
+#offer ul {
+  padding: 8px 70px; }
+
+#offer li {
+  padding: 5px 0; }
+
 #documents li {
   list-style-type: none;
   padding: 8px 50px; }
