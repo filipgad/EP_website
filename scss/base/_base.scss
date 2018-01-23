@@ -158,7 +158,7 @@ header {
 section {
   padding: 50px 0;
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 47%, rgba(220,219,220,1) 76%, rgba(199,197,199,1) 100%);
-  @media #{$tablet}, #{$desktop} {
+  @media #{$desktop} {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -170,7 +170,7 @@ section {
     }
   }
   @media #{$tablet} {
-    padding: 100px 40px;
+    padding: 100px 100px;
   }
   @media #{$desktop} {
     padding: 150px 100px;
@@ -208,6 +208,18 @@ section {
   }
   span {
     margin-right: 5px;
+  }
+  @media #{$tablet} {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 40px;
+    .documents_info {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+    }
   }
 }
 
