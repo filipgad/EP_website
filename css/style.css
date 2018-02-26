@@ -219,3 +219,34 @@ section {
     @media (min-width: 1024px) {
       .contact_map iframe {
         width: 100%; } }
+
+#scrrol__btn {
+  display: inline-block;
+  background-color: rgba(250, 250, 250, 0.5);
+  border: 1px solid #0a2142;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  transition: background-color .3s;
+  z-index: 1000; }
+
+#scrrol__btn:hover {
+  cursor: pointer;
+  background-color: #ccc9cb; }
+
+#scrrol__btn:active {
+  background-color: #ccc9cb; }
+
+#scrrol__btn::after {
+  content: "\F077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #0a2142; }
