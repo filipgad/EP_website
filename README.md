@@ -3,4 +3,4 @@
 Website for leasing company - EP Centrum Finansowe.
 
 ## Technologies used
-HTML5, CSS/SASS, jQuery
+HTML5, CSS/SASS, jQuery, RWD
