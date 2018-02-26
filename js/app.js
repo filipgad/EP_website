@@ -4,7 +4,7 @@ $(document).ready(function() {
     var menu = $("#main_nav");
     var menuLink = $("#main_nav a");
     var btn = $('#scrrol__btn');
-    
+
     if (window.matchMedia('(max-width: 767px)').matches) {
         menu.hide();
         hamburgerBtn.on("click", function () {
@@ -28,7 +28,7 @@ $(document).ready(function() {
     $(window).scroll(function(){
         if($(this).scrollTop() > 200){
             btn.fadeIn();
-        }else{
+        } else {
             btn.fadeOut();
         }
     });
@@ -38,6 +38,7 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: 0
         }, 1000);
+        return false;
     });
 
 });
