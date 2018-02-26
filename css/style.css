@@ -224,14 +224,12 @@ footer {
   right: 30px;
   transition: background-color .3s;
   z-index: 1000; }
-
-#scrrol__btn:hover {
-  cursor: pointer;
-  background-color: #ccc9cb; }
-
-#scrrol__btn::after {
-  content: "\F077";
-  font-family: FontAwesome;
-  font-size: 2em;
-  line-height: 50px;
-  color: #0a2142; }
+  #scrrol__btn:hover {
+    cursor: pointer;
+    background-color: #ccc9cb; }
+  #scrrol__btn::after {
+    content: "\F077";
+    font-family: FontAwesome;
+    font-size: 2em;
+    line-height: 50px;
+    color: #0a2142; }
