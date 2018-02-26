@@ -1,5 +1,6 @@
-# EP_website
+# EP_company_website
 
 Website for leasing company - EP Centrum Finansowe.
 
-Project in progress...
+## Technologies used
+HTML5, CSS/SASS, jQuery
