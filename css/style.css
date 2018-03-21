@@ -112,7 +112,7 @@ header {
       #main_nav li:first-child {
         border: none; } }
 
-.main_text {
+#main_text {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -121,12 +121,12 @@ header {
   height: 85%;
   color: #0a2142;
   font-size: 1.5rem; }
-  .main_text h1 {
+  #main_text h1 {
     background-color: rgba(250, 250, 250, 0.3); }
   @media (min-width: 768px) and (max-width: 1023px), (min-width: 1024px) {
-    .main_text {
+    #main_text {
       font-size: 3rem; }
-      .main_text h1 {
+      #main_text h1 {
         margin-left: 5%; } }
 
 section {
