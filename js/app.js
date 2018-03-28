@@ -3,7 +3,7 @@ $(document).ready(function() {
     var hamburgerBtn = $("#hamburger");
     var menu = $("#main_nav");
     var menuLink = $("#main_nav a");
-    var btn = $('#scrrol__btn');
+    var btn = $('#scroll__btn');
 
     if (window.matchMedia('(max-width: 767px)').matches) {
         menu.hide();

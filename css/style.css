@@ -211,7 +211,7 @@ footer {
       text-decoration: none;
       color: #E8E8E8; }
 
-#scrrol__btn {
+#scroll__btn {
   display: none;
   background-color: rgba(250, 250, 250, 0.5);
   border: 1px solid #0a2142;
@@ -224,10 +224,10 @@ footer {
   right: 30px;
   transition: background-color .3s;
   z-index: 1000; }
-  #scrrol__btn:hover {
+  #scroll__btn:hover {
     cursor: pointer;
     background-color: #ccc9cb; }
-  #scrrol__btn::after {
+  #scroll__btn::after {
     content: "\F077";
     font-family: FontAwesome;
     font-size: 2em;
